@@ -622,7 +622,7 @@ bool QExplore::startReplication(bool continuous)
 
         C4String  c4RemoteDbName = remoteDbName;
         C4Address remoteAddress;
-        if (!c4repl_parseURL(repUrl, &remoteAddress, &c4RemoteDbName))
+        if (!c4address_fromURL(repUrl, &remoteAddress, &c4RemoteDbName))
         {
             QString errStr = QString("Unable to read remote url %1.").arg(m_repUrl);
             qWarning("%s", qPrintable(errStr));
