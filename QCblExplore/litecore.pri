@@ -80,7 +80,6 @@ macx {
    LIBS += -L$$LIBCBL_DIR \
      -lLiteCore-static  \
      -lLiteCoreREST-static \
-     -lSQLCipher \
      -lFleece  \
      -lTokenizer   \
      -lblip_cpp  \
